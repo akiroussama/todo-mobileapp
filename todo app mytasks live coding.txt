@@ -2,26 +2,38 @@ Create blank from expo typescript template:
 npx create-expo-app -t expo-template-blank-typescript
 
 
-
-install 
-yarn add @react-navigation/native @react-navigation/drawer react-native-screens
-
-
-autre dependencies:
-yarn add native-base react-native-svg  styled-components styled-system
-
-et encore
-yarn add moti react-native-reanimated                                 
+Install native base : https://nativebase.io/
+npm install native-base
+expo install react-native-svg@12.1.1
+expo install react-native-safe-area-context@3.3.2
 
 
-
-
-#### Prepare to use native base ###
+Refactor code
+import Main from "./src/screens/main";
+export default function App() {
+  return (<Main></Main>);
+}
 
 
 
+import { StatusBar } from 'expo-status-bar';
+import { StyleSheet, Text, View } from 'react-native';
 
+export default function Main() {
+   return (
+    <View style={styles.container}>
+      <Text>Open up App.tsx to start working on your app!</Text>
+      <StatusBar style="auto" />
+    </View>
+  )
+}
 
-
-
-yarn add react-native-gesture-handler
+const styles = StyleSheet.create({
+    container: {
+      flex: 1,
+      backgroundColor: '#fff',
+      alignItems: 'center',
+      justifyContent: 'center',
+    },
+  });
+  
