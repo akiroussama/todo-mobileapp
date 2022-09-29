@@ -1,0 +1,27 @@
+Create blank from expo typescript template:
+npx create-expo-app -t expo-template-blank-typescript
+
+
+
+install 
+yarn add @react-navigation/native @react-navigation/drawer react-native-screens
+
+
+autre dependencies:
+yarn add native-base react-native-svg  styled-components styled-system
+
+et encore
+yarn add moti react-native-reanimated                                 
+
+
+
+
+#### Prepare to use native base ###
+
+
+
+
+
+
+
+yarn add react-native-gesture-handler
